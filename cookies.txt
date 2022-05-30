@@ -1,0 +1,218 @@
+[
+    {
+        "Name": "Snickerdoodle Cookie",
+        "Rarity": "2",
+        "Price": "10",
+        "Description": "Crisp yet Chewy"
+    },
+    {
+        "Name": "Chocolate Chip Cookie",
+        "Rarity": "1",
+        "Price": "12",
+        "Description": "Classic Favourite of Many"
+    },
+    {
+        "Name": "Oatmeal Raisin Cookie",
+        "Rarity": "1",
+        "Price": "8",
+        "Description": "Controversial but Pretty Good"
+    },
+    {
+        "Name": "Gingersnap Cookie",
+        "Rarity": "2",
+        "Price": "10",
+        "Description": "Sharp Snap with a Bite"
+    },
+    {
+        "Name": "Fortune Cookie",
+        "Rarity": "1",
+        "Price": "12",
+        "Description": "Tells the future?"
+    },
+    {
+        "Name": "Macaron Cookie",
+        "Rarity": "3",
+        "Price": "15",
+        "Description": "Woah Fancy!"
+    },
+    {
+        "Name": "Coconut Macaroon Cookie",
+        "Rarity": "3",
+        "Price": "12",
+        "Description": "Not to be Confused with Macarons"
+    },
+    {
+        "Name": "Pinwheel Cookie",
+        "Rarity": "5",
+        "Price": "17",
+        "Description": "Hypnotic and Delicious"
+    },
+    {
+        "Name": "Red Velvet Cookie",
+        "Rarity": "5",
+        "Price": "15",
+        "Description": "Mini Cake in your Mouth!"
+    },
+    {
+        "Name": "Gingerbread Cookie",
+        "Rarity": "1",
+        "Price": "10",
+        "Description": "Master Shapeshifter; Can look like anything"
+    },
+    {
+        "Name": "Jam / Thumbprint Cookie",
+        "Rarity": "3",
+        "Price": "16",
+        "Description": "The Jam really makes this one Complete"
+    },
+    {
+        "Name": "Shortbread Cookie",
+        "Rarity": "4",
+        "Price": "20",
+        "Description": "Simple yet Delectable"
+    },
+    {
+        "Name": "Lofthouse Cookie",
+        "Rarity": "2",
+        "Price": "11",
+        "Description": "The Softest Sugar Cookie You'll ever eat~"
+    },
+    {
+        "Name": "Sugar Cookie",
+        "Rarity": "2",
+        "Price": "10",
+        "Description": "Cute and Sweet!"
+    },
+    {
+        "Name": "Thin Mint Cookie",
+        "Rarity": "3",
+        "Price": "15",
+        "Description": "THIN MINTS"
+    },
+    {
+        "Name": "Butterscotch Cookie",
+        "Rarity": "3",
+        "Price": "17",
+        "Description": "Complex and Flavourful all the same"
+    },
+    {
+        "Name": "Christmas Cookie",
+        "Rarity": "1",
+        "Price": "13",
+        "Description": "All different kinds of Christmas Delights"
+    },
+    {
+        "Name": "Birthday Cake Cookie",
+        "Rarity": "2",
+        "Price": "14",
+        "Description": "Happy Birthday!"
+    },
+    {
+        "Name": "Peanut Butter Cookie",
+        "Rarity": "1",
+        "Price": "10",
+        "Description": "Rich & Beautiful"
+    },
+    {
+        "Name": "Black and White Cookie",
+        "Rarity": "4",
+        "Price": "17",
+        "Description": "New York Mainstay"
+    },
+    {
+        "Name": "Butter Cookie",
+        "Rarity": "1",
+        "Price": "18",
+        "Description": "These ones aren't for sewing"
+    },
+    {
+        "Name": "White chocolate Macadamia Cookie",
+        "Rarity": "4",
+        "Price": "16",
+        "Description": "The Chunks complete these mouthly heavens"
+    },
+    {
+        "Name": "Biscotti Cookie",
+        "Rarity": "2",
+        "Price": "10",
+        "Description": "Ideal for Dipping!"
+    },
+    {
+        "Name": "Peanut Butter Blossoms Cookie",
+        "Rarity": "5",
+        "Price": "15",
+        "Description": "Cute Cookies with a Peanut Butter twist"
+    },
+    {
+        "Name": "Crinkle Cookies Cookie",
+        "Rarity": "5",
+        "Price": "18",
+        "Description": "Ideal for all your pebble-in-your-mouth desires"
+    },
+    {
+        "Name": "Meringue Cookie",
+        "Rarity": "3",
+        "Price": "17",
+        "Description": "They're like little Clouds!!"
+    },
+    {
+        "Name": "Fudge Cookie",
+        "Rarity": "2",
+        "Price": "13",
+        "Description": "Dense and Rich; Just as they should"
+    },
+    {
+        "Name": "Stroopwafel Cookie",
+        "Rarity": "4",
+        "Price": "15",
+        "Description": "Funny Name"
+    },
+    {
+        "Name": "Icebox Cookie",
+        "Rarity": "2",
+        "Price": "13",
+        "Description": "No heat required!"
+    },
+    {
+        "Name": "Animal Cookie",
+        "Rarity": "1",
+        "Price": "10",
+        "Description": "It's a Giraffe :D"
+    },
+    {
+        "Name": "Millionaire's Shortbread Cookie",
+        "Rarity": "3",
+        "Price": "20",
+        "Description": "The closest you can get to Perfection"
+    },
+    {
+        "Name": "Carrot Cake Cookie",
+        "Rarity": "4",
+        "Price": "16",
+        "Description": "It tricks your brain into thinking it's healthy and tastes better"
+    },
+    {
+        "Name": "Custard Cream Cookie",
+        "Rarity": "3",
+        "Price": "13",
+        "Description": "More Popular in the British Isles"
+    },
+    {
+        "Name": "Empire Cookie",
+        "Rarity": "5",
+        "Price": "20",
+        "Description": "Now these ones just look amazing"
+    },
+    {
+        "Name": "Oreo Cookie",
+        "Rarity": "1",
+        "Price": "10",
+        "Description": "Dunk 'em!"
+    },
+    {
+        "Name": "Party Ring Cookie",
+        "Rarity": "3",
+        "Price": "12",
+        "Description": "Donut Cookies :O"
+    }
+]

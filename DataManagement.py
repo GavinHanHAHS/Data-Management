@@ -14,12 +14,12 @@ print(cookie_data[0:5])  # check data has loaded properly
 
 # Main Loop for Program run
 program_run = True
+cookie_filter = "none"
 
 while program_run:
     x = int(input("What Would you like to do?\n"
                   "1. Display all data\n"
                   "2. Display some Data\n"
-                  " 2.1 Select Filter\n"
                   "3. Add Current/Remove Obj to Favourites\n"
                   "4. Display Favourites\n"))
 
@@ -28,6 +28,12 @@ while program_run:
             for key in cookie:
                 print(f"{key}: {cookie[key]}")
             print("\n")
+    if x == 2:
+        while True:
+            x = int(input("Please choose a filter:\n"
+                          "1. Alphabetical"
+                          "2. Price"
+                          "3. Rarity"))
 
 # Ideas for this short program:
 # Filters

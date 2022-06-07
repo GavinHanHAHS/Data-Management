@@ -31,9 +31,27 @@ while program_run:
     if x == 2:
         while True:
             x = int(input("Please choose a filter:\n"
-                          "1. Alphabetical"
-                          "2. Price"
-                          "3. Rarity"))
+                          "1. Alphabetical\n"
+                          "2. Price\n"
+                          "3. Rarity\n"))
+            if x == 2:
+                display_list = []
+                for cookie in cookie_data:
+                    if len(display_list) == 0:
+                        display_list.append(cookie)
+                    else:
+                        for search in display_list:
+                            if int(cookie["Price"]) <= int(search["Price"]):
+                                display_list.insert(int(display_list.index(search)), cookie)
+                                break
+                        # Add Cookie to end of list if no alphabetic lesser
+                        if cookie not in display_list:
+                            display_list.append(cookie)
+                for cookie in display_list:
+                    for key in cookie:
+                        print(f"{key}: {cookie[key]}")
+                    print("\n")
+                break
 
 # Ideas for this short program:
 # Filters

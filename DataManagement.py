@@ -108,11 +108,11 @@ while main_program:
                                     for cookie in cookie_data:
                                         if add_cookie == cookie["Name"]:
                                             user_favs.append(cookie)
-                                            print("Cookie added to favourites!")
-                                            found = False
+                                            print("Cookie added to favourites!") #RIGHT NOW THIS IS CASE SENSTIIVE
+                                            found = False                        #ALSO MUL;TIPLES AGAIN
                                             break
                                     if not found:
-                                        print("Cookie not found!")
+                                        print("Cookie not found!") # ADD QUIT OPTION HERE
                                     else:
                                         break
                             elif z == "2":
@@ -122,7 +122,7 @@ while main_program:
                                     for cookie in user_favs:
                                         if remove_cookie == cookie["Name"]:
                                             user_favs.pop(user_favs.index(cookie))
-                                            print("Cookie removed from favourites!")
+                                            print("Cookie removed from favourites!") #RIGHT NOW THIS IS CASE SENSTIIVE
                                             found = True
                                             break
                                     if not found:

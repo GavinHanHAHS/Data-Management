@@ -144,7 +144,7 @@
         "Description": "Cute Cookies with a Peanut Butter twist"
     },
     {
-        "Name": "Crinkle Cookies Cookie",
+        "Name": "Crinkle Cookie",
         "Rarity": 5,
         "Price": 18,
         "Description": "Ideal for all your pebble-in-your-mouth desires"

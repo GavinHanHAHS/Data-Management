@@ -21,6 +21,16 @@ print(user_data[0:1])
 
 
 # Important Functions
+def new_user(username, password):
+    newDict = {
+        "Username": username,
+        "Password": password,
+        "Favourites": []
+    }
+
+    user_data.append(newDict)
+
+
 def pretty_display(list_of_dicts):
     # Display items in a pretty way
     for item in list_of_dicts:
@@ -44,31 +54,108 @@ def sort_cookies(method):
     return display_list
 
 
-# Main Loop for Program run
-program_run = True
+# Main Loop(s) for Program run
+main_program = True
 
-while program_run:
-    x = int(input("What Would you like to do?\n"
-                  "1. Display all data\n"
-                  "2. Display some Data\n"
-                  "3. Add Current/Remove Obj to Favourites\n"
-                  "4. Display Favourites\n"))
+while main_program:
+    x = int(input("What would you like to do?\n"
+                  "1. Login\n"
+                  "2. Register\n"
+                  "3. Save & Quit\n"))
 
     if x == 1:
-        pretty_display(cookie_data)
-    if x == 2:
-        while True:
-            x = input("Please type a filter:\n"
-                      "\"Name\"\n"
-                      "\"Price\"\n"
-                      "\"Rarity\"\n")
-            pretty_display(sort_cookies(x.lower()))
-            break
+        # login, then do main program
+        input_username = input("Input your Username\n")
+        input_password = input("Input your Password\n")
+        userFound = False
+        for user in user_data:
+            if user["Username"] == input_username and user["Password"] == input_password:
+                print("login success! Redirecting to Main Menu...\n\n")
+                user_favs = user["Favourites"]
+                userFound = True
+                while True:
+                    y = int(input("What Would you like to do?\n"
+                                  "1. Display all data\n"
+                                  "2. Display sorted Data\n"
+                                  "3. Add/Remove to Favourites\n"
+                                  "4. Display Favourites\n"
+                                  "5. Logout\n"))
+
+                    if y == 1:
+                        pretty_display(cookie_data)
+                    if y == 2:
+                        options = ["name", "price", "rarity"]
+                        while True:
+                            z = input("Please type a filter:\n"
+                                      "\"Name\"\n"
+                                      "\"Price\"\n"
+                                      "\"Rarity\"\n").lower()
+                            if z in options:
+                                pretty_display(sort_cookies(x))
+                                break
+                            else:
+                                print("Please type a valid option!")
+                    if y == 3:
+                        while True:
+                            z = input("Do you want to add or remove a cookie from favourites??\n"
+                                      "1. Add\n"
+                                      "2. Remove\n"
+                                      "3. Quit Menu\n")
+                            if z == "1":
+                                found = False
+                                while True:
+                                    add_cookie = input("What Kind of Cookie would you like to Add?\n")
+                                    for cookie in cookie_data:
+                                        if add_cookie == cookie["Name"]:
+                                            user_favs.append(cookie)
+                                            print("Cookie added to favourites!")
+                                            found = False
+                                            break
+                                    if not found:
+                                        print("Cookie not found!")
+                                    else:
+                                        break
+                            elif z == "2":
+                                found = False
+                                while True:
+                                    remove_cookie = input("What Kind of Cookie would you like to Remove?\n")
+                                    for cookie in user_favs:
+                                        if remove_cookie == cookie["Name"]:
+                                            user_favs.pop(user_favs.index(cookie))
+                                            print("Cookie removed from favourites!")
+                                            found = True
+                                            break
+                                    if not found:
+                                        print("Cookie not found!")
+                                    else:
+                                        break
+                            elif z == "3":
+                                break
+                            else:
+                                print("Invalid input")
+
+                    if y == 4:
+                        # favourites list path: user_data[user_index]["Favourites"] -> list of favourites
+                        pretty_display(user_favs)
+                    if y == 5:
+                        break
+        if not userFound:
+            print("Could not find User match.\n\n")
+    if x == 2: #PROBLEM: CHECK IF USER EXISTS ALREADY
+        newUsername = input("Please provide your Username\n")
+        newPassword = input("Please Provide your Password\n")
+
+        new_user(newUsername, newPassword)
+
     if x == 3:
-        if "5" > "20":
-            print('wtf')
-        else:
-            print("ok")
+        # Saving functions
+        print("Saving...")
+        save_data = json.dumps(user_data, indent=4)
+        fileOpen = open("users.txt", "w")
+        fileOpen.write(save_data)
+        fileOpen.close()
+        print("Goodbye!")
+        main_program = False
 
 # Ideas for this short program:
 # Filters
@@ -79,16 +166,12 @@ while program_run:
 #   add desc for each cookie, display when choosing
 #   how to index items to look at? have each display also be a list with accessible objects
 
-
-
-
-
 # Below is mostly just the code for transforming cookie.txt into cookies.txt
 
-#all_cookies = []
+# all_cookies = []
 
 
-#def new_cookie(CookieList):
+# def new_cookie(CookieList):
     # Input a list that is one line of txt doc, output cookie dictionary.
     # Format for cookies is Name, Rarity, Price and Description
 #    newDict = {
@@ -101,16 +184,17 @@ while program_run:
 #    all_cookies.append(newDict)
 
 
-#for cookie in cookie_data:
+# for cookie in cookie_data:
 #    x = cookie.split(",")
 #    new_cookie(x)
 
 
-#for cookie in all_cookies:
+# for cookie in all_cookies:
 #    print(str(cookie) + "\n")
 
-#x = json.dumps(all_cookies, indent=4)
-#print(x)
-#y = open("cookies.txt", "w")
-#y.write(x)
-#y.close
+# x = json.dumps(all_cookies, indent=4)
+# print(x)
+# y = open("cookies.txt", "w")
+# y.write(x)
+# y.close
+

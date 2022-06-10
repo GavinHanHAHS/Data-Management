@@ -2,6 +2,31 @@
     {
         "Username": "MilkStyx",
         "Password": "lactoseIntolerant",
-        "Favourites": []
+        "Favourites": [
+            {
+                "Name": "Snickerdoodle Cookie",
+                "Rarity": 2,
+                "Price": 10,
+                "Description": "Crisp yet Chewy"
+            },
+            {
+                "Name": "Oreo Cookie",
+                "Rarity": 1,
+                "Price": 10,
+                "Description": "Dunk 'em!"
+            }
+        ]
+    },
+    {
+        "Username": "twelve",
+        "Password": "12",
+        "Favourites": [
+            {
+                "Name": "Black and White Cookie",
+                "Rarity": 4,
+                "Price": 17,
+                "Description": "New York Mainstay"
+            }
+        ]
     }
 ]
